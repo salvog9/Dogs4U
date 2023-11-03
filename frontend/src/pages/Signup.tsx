@@ -37,7 +37,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="w-screen h-screen bg-beige flex items-center justify-center">
+    <div className="relative w-full h-screen bg-beige flex items-center justify-center overflow-hidden">
       <div className="w-72 h-2/3 sm:w-72 md:w-72 lg:w-96 xl:w-96 2xl:w-96 bg-white rounded-lg flex flex-col justify-center items-center shadow-lg">
         <img
           className="w-28 sm:w-28 md:w-28 lg:w-32 xl:w-32 2xl:w-32 absolute top-32"
