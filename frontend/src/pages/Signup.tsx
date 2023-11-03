@@ -40,7 +40,7 @@ const Signup = () => {
     <div className="relative w-full h-screen bg-beige flex items-center justify-center overflow-hidden">
       <div className="w-72 h-2/3 sm:w-72 md:w-72 lg:w-96 xl:w-96 2xl:w-96 bg-white rounded-lg flex flex-col justify-center items-center shadow-lg">
         <img
-          className="w-28 sm:w-28 md:w-28 lg:w-32 xl:w-32 2xl:w-32 absolute top-32"
+          className="w-24 sm:w-24 md:w-24 lg:w-24 xl:w-32 2xl:w-32 absolute top-28 sm:top-28 md:top-28 lg:top-28 xl:top-32 2xl:top-32 "
           src={logo}
           alt=""
         />
@@ -83,7 +83,7 @@ const Signup = () => {
             Register
           </button>
         </form>
-        <p className="mt-6">
+        <p className="mt-2 sm:mt-2 md:mt-4 lg:mt-4 xl:mt-6 2xl:mt-6">
           Return to{" "}
           <Link to="/">
             <span className="text-orange hover:opacity-80">Login Page</span>
