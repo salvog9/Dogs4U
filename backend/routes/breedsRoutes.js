@@ -19,9 +19,9 @@ router.get("/list", async (req, res) => {
 });
 
 router.post("/subBreed/list", async (req, res) => {
-  const { breed } = req.body;
+  const { subBreed } = req.body;
 
-  const url = `https://dog.ceo/api/breed/${breed}/list`;
+  const url = `https://dog.ceo/api/breed/${subBreed}/list`;
 
   await axios
     .get(url)
