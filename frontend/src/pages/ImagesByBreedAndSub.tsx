@@ -66,7 +66,7 @@ const ImagesByBreedAndSub = () => {
 
     const urlSub = "http://localhost:3000/breeds/subBreed/list";
     await axios
-      .post(urlSub, { breed: target.textContent!.toLowerCase() }, { headers : authHeader()})
+      .post(urlSub, { subBreed: target.textContent!.toLowerCase() }, { headers : authHeader()})
       .then((response) => {
         const arrSub = response.data;
         setListSub(arrSub);
