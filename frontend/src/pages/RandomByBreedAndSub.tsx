@@ -31,6 +31,7 @@ const RandomByBreedAndSub = () => {
 
   const onClickInput = () => {
     setDisplayList("flex");
+    setDisplaySub("hidden");
     setInput("");
     setInputSub("");
     setDisplayMessage("hidden");
@@ -69,7 +70,7 @@ const RandomByBreedAndSub = () => {
     await axios
       .post(
         urlSub,
-        { breed: target.textContent!.toLowerCase() },
+        { subBreed: target.textContent!.toLowerCase() },
         { headers: authHeader() }
       )
       .then((response) => {
@@ -166,19 +167,29 @@ const RandomByBreedAndSub = () => {
             onClick={onClickInputSub}
           />
           <div>
-            <ul
-              className={`absolute w-52 sm:w-52 md:w-72 lg:w-80 xl:w-80 2xl:w-80 max-h-80 ${displaySub} flex-col overflow-y-auto bg-black rounded-b-lg border-solid border-b-2 border-r-2 border-l-2 border-black transition-all duration-200`}
-            >
-              {filteredSubList.map((sub, index) => (
-                <li
-                  onClick={subBreedClicked}
-                  className="text-white p-2 cursor-pointer hover:bg-white hover:text-black flex items-center"
-                  key={index}
-                >
-                  {sub[0].toUpperCase() + sub.slice(1)}
+            {listSub.length !== 0 ? (
+              <ul
+                className={`absolute w-52 sm:w-52 md:w-72 lg:w-80 xl:w-80 2xl:w-80 max-h-80 ${displaySub} flex-col overflow-y-auto bg-black rounded-b-lg border-solid border-b-2 border-r-2 border-l-2 border-black transition-all duration-200`}
+              >
+                {filteredSubList.map((sub, index) => (
+                  <li
+                    onClick={subBreedClicked}
+                    className="text-white p-2 cursor-pointer hover:bg-white hover:text-black flex items-center"
+                    key={index}
+                  >
+                    {sub[0].toUpperCase() + sub.slice(1)}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <ul
+                className={`absolute w-52 sm:w-52 md:w-72 lg:w-80 xl:w-80 2xl:w-80 max-h-80 ${displaySub} flex-col overflow-y-auto bg-black rounded-b-lg border-solid border-b-2 border-r-2 border-l-2 border-black transition-all duration-200`}
+              >
+                <li className="text-white p-2 flex items-center">
+                  No sub-breed available!
                 </li>
-              ))}
-            </ul>
+              </ul>
+            )}
           </div>
         </div>
         <button
