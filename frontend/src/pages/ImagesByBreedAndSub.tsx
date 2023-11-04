@@ -30,7 +30,7 @@ const ImagesByBreedAndSub = () => {
 
   const onClickInput = () => {
     setDisplayList("flex");
-    setDisplaySub("hidden")
+    setDisplaySub("hidden");
     setInput("");
     setInputSub("");
     setDisplayMessage("hidden");

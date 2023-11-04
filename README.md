@@ -40,7 +40,7 @@ To get started with this project, follow these steps to install and set it up on
   - **Install backend dependencies using npm**:   
 
     ```
-    npm start
+    npm install
     ```
   - Go to the config directory within the backend folder and set your local database settings under the "Development" section in the config.json file.
   - Migrate the User table to your local database using Sequelize CLI:
