@@ -22,7 +22,7 @@ Please make sure you have these prerequisites in place before you proceed with u
 
 ## How to Install
 
-To develop this project, a dashboard, I employed React for the frontend and Node.js for the backend, facilitating seamless interaction with APIs and database communication.
+To develop this project i employed React for the frontend and Node.js for the backend, facilitating seamless interaction with APIs and database communication.
 
 To get started with this project, follow these steps to install and set it up on your local machine:
 
