@@ -22,6 +22,8 @@ Please make sure you have these prerequisites in place before you proceed with u
 
 ## How to Install
 
+To develop this project i employed React for the frontend and Node.js for the backend, facilitating seamless interaction with APIs and database communication.
+
 To get started with this project, follow these steps to install and set it up on your local machine:
 
 1.  **Clone the Repository**:
@@ -42,7 +44,7 @@ To get started with this project, follow these steps to install and set it up on
     ```
     npm install
     ```
-  - Go to the config directory within the backend folder and set your local database settings under the "Development" section in the config.json file.
+  - Go to the `config` directory within the backend folder and set your local database settings under the "Development" section in the `config.json` file.
   - Migrate the User table to your local database using Sequelize CLI:
 
     ```
