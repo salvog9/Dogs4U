@@ -70,7 +70,7 @@ To get started with this project, follow these steps to install and set it up on
     ```
     npm run dev
     ```
-Now you've successfully set up both the backend and frontend of the project. You can access the application at http://localhost:5173 in your web browser.
+Now you've successfully set up both the backend and frontend of the project and you can access to the application in your web browser.
 If you encounter any issues or have further questions, please refer to the project-specific documentation or seek assistance from the project maintainers.
 
 ## How to use
