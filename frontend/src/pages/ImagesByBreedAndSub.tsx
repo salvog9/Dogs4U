@@ -123,7 +123,7 @@ const ImagesByBreedAndSub = () => {
   return (
     <div className="bg-white w-full h-full flex flex-col justify-center items-center">
       <div className=" w-full flex flex-col items-center justify-center h-2/4">
-        <div className="mt-10">
+        <div className="mt-12">
           <input
             className="w-52 h-14 sm:w-52 md:w-72 lg:w-80 xl:w-80 2xl:w-80 relative p-4 bg-transparent placeholder:text-black  outline-none border-2 border-black"
             type="text"
