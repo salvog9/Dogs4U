@@ -81,4 +81,8 @@ Once you have started the local server, as it will be your first time accessing 
 
 @salvog9
 
+## License
+
+MIT
+
 
