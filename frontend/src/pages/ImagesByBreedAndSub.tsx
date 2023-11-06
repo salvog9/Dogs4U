@@ -201,7 +201,7 @@ const ImagesByBreedAndSub = () => {
         </button>
       </div>
 
-      <div className=" w-full h-2/4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 justify-items-center items-center gap-10 overflow-auto ">
+      <div className=" w-11/12 h-2/4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 justify-items-center items-center gap-10 overflow-auto ">
         {allDogs.map((image, index) => (
           <div
             key={index}
