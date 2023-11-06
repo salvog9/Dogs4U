@@ -4,9 +4,9 @@ import logo from "../assets/logo.png";
 const SideBar = () => {
   return (
     <div className="bg-beige w-52 h-screen">
-      <Link to="/dashboard" className="flex items-center justify-center mt-2 mr-3">
+      <Link to="/dashboard" className="flex items-center justify-center mt-2 mr-6">
         <img className="w-10 h-10" src={logo} alt="" />
-        <h1 className="font-bold corsive text-lg">Dogs4U</h1>
+        <h1 className="font-bold corsive text-lg hover:opacity-80">Dogs4U</h1>
       </Link>
       <div className="py-10">
         <div className="flex items-center ml-2">

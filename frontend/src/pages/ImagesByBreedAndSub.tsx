@@ -87,6 +87,11 @@ const ImagesByBreedAndSub = () => {
     setDisplaySub("hidden");
   };
 
+  const emptyListClicked = () => {
+    setInputSub("");
+    setDisplaySub("hidden");
+  }
+
   const searchDogs = async () => {
     const user = JSON.parse(localStorage.getItem("user")!);
     if (!user) {
@@ -181,7 +186,7 @@ const ImagesByBreedAndSub = () => {
               <ul
                 className={`absolute w-52 sm:w-52 md:w-72 lg:w-80 xl:w-80 2xl:w-80 max-h-80 ${displaySub} flex-col overflow-y-auto bg-black rounded-b-lg border-solid border-b-2 border-r-2 border-l-2 border-black transition-all duration-200`}
               >
-                <li className="text-white p-2 flex items-center">
+                <li onClick={emptyListClicked} className="text-white p-2 flex items-center cursor-pointer">
                   No sub-breed available!
                 </li>
               </ul>
